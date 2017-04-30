@@ -2,8 +2,10 @@
 # returns the reverse. The one caveat: Don't use the reverse method that already
 # comes with Ruby!
 
-def reverse_a_string(string)
+string = "abcde"
 
+def reverse_a_string(string)
+ string.chars.reduce { |x, y| y + x }    
 end
 
 # Driver code - don't touch anything below this line.
